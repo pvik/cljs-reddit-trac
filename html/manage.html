@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<title>Reddit-Trac</title>
+		<link rel="stylesheet" href="css/spectre-custom.css">
+		<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  </head>
+  <body>
+		
+		<div class="container">
+
+			<!--     NAVBAR    -->
+			<div class="columns">
+				<div class="column col-12 bg-dark">
+					<header class="navbar">
+						<section class="navbar-section">
+							<a href="index.html" class="navbar-brand mr-2">Reddit-Trac</a>
+						</section>
+						<section class="navbar-section">
+ 							<a href="index.html" class="btn btn-link">New</a>
+							<a href="manage.html" class="btn btn-link">Manage</a>
+							<a href="faq.html" class="btn btn-link">FAQ</a>
+							<a href="about.html" class="btn btn-link">About</a>
+						</section>
+					</header>
+				</div>
+			</div>
+
+			<div class="container">
+				<!-- Toasts -->
+				<div class="columns" id="div-toasts">
+
+				</div>
+				<center>
+					<!-- Page Contents -->
+					<div class="columns">
+						<div class="column col-12" id="contents">
+							&nbsp;
+							<div class="empty">
+								<p class="empty-title h5">Manage Trac's!</p>
+								
+								<p>Please use a link from one of the Reddi-Trac emails to manage your Tracs!</p>
+
+								<p>If you do not have access to any of yur older Trac emails, please use the form below 
+									to Resend a manage link</p>
+
+								<form class="form-horizontal">
+
+									<div class="form-group">
+										<div class="col-12 col-sm-12">
+											<label class="form-label" for="input-email">Email
+												<input class="form-input" type="text" id="input-email" 
+																			placeholder="snoo@example.org">
+											</label>
+										</div>
+									</div>
+									<!-- form structure -->
+								</form>
+								<div class="empty-action">
+									<button class="btn btn-primary" id="resend-watch">Get Manage Tracs Link</button>
+								</div>
+							</div>
+ 						</div>
+					</div>
+				</center>
+			</div>
+
+			<script src="main.js"></script>
+			<script>reddit-trac.core.dashboard();</script>
+  </body>
+</html>
