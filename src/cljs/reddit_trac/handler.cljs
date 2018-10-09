@@ -21,11 +21,11 @@
                                 :domain-ignore   domain-ignore
                                 :check-flair     check-flair}))]
       (cond
-        (= (:created? resp) :ok)    (do
-                                      (notify/add-toast :error
-                                                        "Watch Created, Please check you email"))
-        (= (:created? resp) :error) (do
-                                      (notify/add-toast :error
-                                                        (str "Create Failed: "
-                                                             (:message resp)))))
+        (= (:created? resp) :ok)    (notify/add-toast :error
+                                                      "Watch Created, Please check you email")
+        (= (:created? resp) :error) (notify/add-toast :error
+                                                      (str "Create Failed: "
+                                                           (:message resp)))
+        :else (notify/add-toast :error
+                                (str "Invalid Create Response: " resp)))
       (dom/remove-class! (dom/sel1 :#btn-create-watch) :loading))))
