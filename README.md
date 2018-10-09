@@ -1,4 +1,4 @@
-# reddit-trac
+# reddit-trac ClojureScript Frontend
 
 **NOTE**: This project is currently under heavy development. 
 
