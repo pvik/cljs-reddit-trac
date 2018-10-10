@@ -47,7 +47,8 @@
 									<div class="form-group">
 										<div class="col-3 col-sm-12">
 											<label class="form-label" for="input-email">Email
-												<input class="form-input" type="text" id="input-email" 
+												<input class="form-input" type="email" id="input-email" 
+																			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,14}$"
 																			placeholder="snoo@example.org">
 											</label>
 										</div>
@@ -77,7 +78,8 @@
 										</div>
 										<div class="col-12 col-sm-12">
 											<label class="form-checkbox form-inline">
-												<input type="checkbox" checked="" id="input-check-flair">
+												<input type="checkbox" checked="" id="input-check-flair"
+													name="input-check-flair" value="true">
 												<i class="form-icon"></i>Check Flair?
 											</label>
 										</div>
@@ -94,6 +96,6 @@
 			</div>
 
 			<script src="main.js"></script>
-			<script>reddit-trac.core.dashboard();</script>
+			<script>reddit_trac.core.dashboard();</script>
   </body>
 </html>

@@ -12,6 +12,7 @@
                  [hodgepodge "0.1.3"]
                  [com.andrewmcveigh/cljs-time "0.5.2"]
                  [prismatic/dommy "1.1.0"]
+                 [com.cemerick/url "0.1.1"]
                  [hipo "0.5.2"]
                  [cljs-http "0.1.45"]
                  ;; logging
